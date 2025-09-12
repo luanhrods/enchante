@@ -5,8 +5,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Enchantè Digital - Sua agência crtiativa',
-  description: 'Criado por Luan Chicale,
+  title: 'Enchantè Digital - Sua agência criativa', 
+  description: 'Criado por Luan Chicale',
   generator: 'KRIATIVA by LC',
 }
 
