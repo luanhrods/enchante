@@ -1,10 +1,10 @@
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
 
 const data = {
-  facebookLink: "https://facebook.com/enchantedigital",
-  instaLink: "https://instagram.com/enchantedigital",
-  twitterLink: "https://twitter.com/enchantedigital",
-  linkedinLink: "https://linkedin.com/company/enchantedigital",
+  facebookLink: "",
+  instaLink: "https://instagram.com/enchante.digital",
+  twitterLink: "",
+  linkedinLink: "https://www.linkedin.com/company/enchantedigital/",
   company: {
     name: "Enchantè",
     description: "Porque sua ideia merece visibilidade.",
@@ -43,32 +43,42 @@ export default function Footer() {
           transform: translateX(-50%);
           z-index: 0;
         }
+        
+        /* --- INÍCIO DA SOLUÇÃO DEFINITIVA --- */
 
         .footer-container {
           position: relative;
           z-index: 1;
           max-width: 800px;
           margin: 0 auto;
+          
+          /* Força a centralização de todos os itens filhos */
+          display: flex;
+          flex-direction: column;
+          align-items: center; 
           text-align: center;
         }
 
         .footer-brand {
           margin-bottom: 40px;
+          width: 100%; /* Garante que o contêiner ocupe o espaço */
+
+          /* Organiza os itens da marca em uma coluna centralizada */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
 
-        /* --- CORREÇÃO (OPÇÃO 2) APLICADA ABAIXO --- */
         .brand-logo {
-          /* Propriedades Flexbox removidas para usar text-align */
           margin-bottom: 20px;
-        }
-
-        .brand-logo img {
-          width: 50px;
-          height: 50px;
+          /* Centralização Flexbox clássica e robusta */
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .brand-name {
-          display: inline-block; /* Essencial para o text-align funcionar corretamente */
+          /* Versão mais simples e limpa, para ser controlada pelo flex pai */
           font-family: "Lexend", sans-serif;
           font-weight: 600;
           font-size: clamp(24px, 5vw, 32px);
@@ -77,7 +87,8 @@ export default function Footer() {
           letter-spacing: 0;
           line-height: 1.2;
         }
-        /* --- FIM DA CORREÇÃO --- */
+
+        /* --- FIM DA SOLUÇÃO DEFINITIVA --- */
 
         .brand-description {
           font-family: "Lexend";
@@ -86,8 +97,6 @@ export default function Footer() {
           color: #d33682;
           margin-bottom: 30px;
           max-width: 500px;
-          margin-left: auto;
-          margin-right: auto;
           padding: 0 10px;
         }
 
@@ -122,9 +131,9 @@ export default function Footer() {
         }
 
         .footer-bottom {
+          width: 100%;
           border-top: 1px solid rgba(211, 54, 130, 0.2);
           padding-top: 30px;
-          text-align: center;
         }
 
         .copyright {
@@ -133,81 +142,6 @@ export default function Footer() {
           color: #aaa;
           line-height: 1.6;
           padding: 0 10px;
-        }
-
-        .copyright a {
-          color: #d33682;
-          text-decoration: none;
-          transition: color 0.3s ease;
-        }
-
-        .copyright a:hover {
-          color: #ffffff;
-        }
-
-        /* Melhorando responsividade para todos os breakpoints */
-        @media screen and (max-width: 991px) {
-          .ai-footer {
-            padding: 50px 20px 25px;
-          }
-        }
-
-        @media screen and (max-width: 767px) {
-          .ai-footer {
-            padding: 40px 16px 20px;
-          }
-          
-          .brand-name {
-            font-size: clamp(22px, 6vw, 28px);
-          }
-          
-          .brand-description {
-            font-size: clamp(13px, 4vw, 16px);
-          }
-          
-          .social-link {
-            width: 45px;
-            height: 45px;
-          }
-        }
-
-        @media screen and (max-width: 480px) {
-          .ai-footer {
-            padding: 30px 12px 15px;
-          }
-
-          .brand-name {
-            font-size: clamp(20px, 7vw, 24px);
-          }
-          
-          .brand-description {
-            font-size: clamp(12px, 4vw, 14px);
-          }
-          
-          .social-link {
-            width: 40px;
-            height: 40px;
-          }
-          
-          .social-link svg {
-            width: 18px;
-            height: 18px;
-          }
-          
-          .copyright {
-            font-size: clamp(11px, 3vw, 12px);
-          }
-        }
-        
-        @media screen and (max-width: 320px) {
-            .social-link {
-               width: 36px;
-               height: 36px;
-            }
-             .social-link svg {
-               width: 16px;
-               height: 16px;
-            }
         }
       `}</style>
 
