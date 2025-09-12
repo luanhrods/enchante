@@ -69,18 +69,15 @@ export default function Footer() {
           height: 50px;
         }
 
+        /* --- CORREÇÃO APLICADA AQUI --- */
         .brand-name {
           font-family: "Lexend", sans-serif;
           font-weight: 600;
           font-size: clamp(24px, 5vw, 32px);
           color: #ffffff;
-          text-align: center;
-          display: block;
           text-transform: none;
           letter-spacing: 0;
           line-height: 1.2;
-          margin: 0 auto;
-          width: 100%;
         }
 
         .brand-description {
