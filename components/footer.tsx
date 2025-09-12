@@ -56,11 +56,9 @@ export default function Footer() {
           margin-bottom: 40px;
         }
 
+        /* --- CORREÇÃO (OPÇÃO 2) APLICADA ABAIXO --- */
         .brand-logo {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 15px;
+          /* Propriedades Flexbox removidas para usar text-align */
           margin-bottom: 20px;
         }
 
@@ -69,8 +67,8 @@ export default function Footer() {
           height: 50px;
         }
 
-        /* --- CORREÇÃO APLICADA AQUI --- */
         .brand-name {
+          display: inline-block; /* Essencial para o text-align funcionar corretamente */
           font-family: "Lexend", sans-serif;
           font-weight: 600;
           font-size: clamp(24px, 5vw, 32px);
@@ -79,6 +77,7 @@ export default function Footer() {
           letter-spacing: 0;
           line-height: 1.2;
         }
+        /* --- FIM DA CORREÇÃO --- */
 
         .brand-description {
           font-family: "Lexend";
@@ -151,32 +150,11 @@ export default function Footer() {
           .ai-footer {
             padding: 50px 20px 25px;
           }
-          
-          .footer-brand {
-            margin-bottom: 35px;
-          }
-          
-          .brand-description {
-            margin-bottom: 25px;
-          }
-          
-          .social-links {
-            gap: 18px;
-            margin-bottom: 35px;
-          }
-          
-          .footer-bottom {
-            padding-top: 25px;
-          }
         }
 
         @media screen and (max-width: 767px) {
           .ai-footer {
             padding: 40px 16px 20px;
-          }
-          
-          .footer-brand {
-            margin-bottom: 30px;
           }
           
           .brand-name {
@@ -185,21 +163,11 @@ export default function Footer() {
           
           .brand-description {
             font-size: clamp(13px, 4vw, 16px);
-            margin-bottom: 20px;
-          }
-          
-          .social-links {
-            gap: 15px;
-            margin-bottom: 30px;
           }
           
           .social-link {
             width: 45px;
             height: 45px;
-          }
-          
-          .footer-bottom {
-            padding-top: 20px;
           }
         }
 
@@ -207,23 +175,13 @@ export default function Footer() {
           .ai-footer {
             padding: 30px 12px 15px;
           }
-          
-          .footer-brand {
-            margin-bottom: 25px;
-          }
-          
+
           .brand-name {
             font-size: clamp(20px, 7vw, 24px);
           }
           
           .brand-description {
             font-size: clamp(12px, 4vw, 14px);
-            margin-bottom: 18px;
-          }
-          
-          .social-links {
-            gap: 12px;
-            margin-bottom: 25px;
           }
           
           .social-link {
@@ -236,33 +194,20 @@ export default function Footer() {
             height: 18px;
           }
           
-          .footer-bottom {
-            padding-top: 18px;
-          }
-          
           .copyright {
             font-size: clamp(11px, 3vw, 12px);
           }
         }
-
+        
         @media screen and (max-width: 320px) {
-          .ai-footer {
-            padding: 25px 8px 12px;
-          }
-          
-          .social-links {
-            gap: 10px;
-          }
-          
-          .social-link {
-            width: 36px;
-            height: 36px;
-          }
-          
-          .social-link svg {
-            width: 16px;
-            height: 16px;
-          }
+            .social-link {
+               width: 36px;
+               height: 36px;
+            }
+             .social-link svg {
+               width: 16px;
+               height: 16px;
+            }
         }
       `}</style>
 
