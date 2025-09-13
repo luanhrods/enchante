@@ -40,13 +40,23 @@ export default function CasesPage() {
     },
     {
       id: 4,
-      title: "Resultados Ipê das Letras",
-      subtitle: "Contrato de 9 meses",
-      description: "Acompanhe os resultados extraordinários do nosso trabalho de 9 meses com a Ipê das Letras. Em breve, revelaremos todo o processo e conquistas alcançadas.",
-      link: "#",
-      tags: ["Em Breve", "Resultados", "Long-term"],
+      title: "Mente Empreendedora",
+      subtitle: "Instagram Design",
+      description: "Desenvolvimento de identidade visual e estratégia de conteúdo para Instagram, criando uma presença digital marcante e engajadora.",
+      link: "https://www.behance.net/gallery/157336135/Mente-Empreendedora-(IG)",
+      tags: ["Social Media", "Instagram", "Design"],
       gradient: "from-yellow-500 via-orange-600 to-red-600",
-      available: false
+      available: true
+    },
+    {
+      id: 5,
+      title: "TubeLab 2021",
+      subtitle: "Projeto Completo",
+      description: "Projeto visual desenvolvido em 2021 para TubeLab, explorando conceitos modernos de design e identidade visual inovadora.",
+      link: "https://www.behance.net/gallery/157311669/TubeLab-2021",
+      tags: ["Branding", "Visual Identity", "2021"],
+      gradient: "from-violet-500 via-indigo-600 to-blue-600",
+      available: true
     }
   ];
 
@@ -138,30 +148,18 @@ export default function CasesPage() {
                       {caseItem.tags.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
-                          className={`px-3 py-1 text-xs font-medium rounded-full ${
-                            tag === "Em Breve" 
-                              ? 'bg-orange-500/20 text-orange-300 border border-orange-500/30' 
-                              : 'bg-purple-500/20 text-purple-300 border border-purple-500/30'
-                          }`}
+                          className="px-3 py-1 text-xs font-medium rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30"
                         >
                           {tag}
                         </span>
                       ))}
                     </div>
                     
-                    {caseItem.available ? (
-                      <div className="text-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </div>
-                    ) : (
-                      <div className="text-orange-400">
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </div>
-                    )}
+                    <div className="text-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </div>
                   </div>
 
                   {/* Case Content */}
@@ -179,19 +177,13 @@ export default function CasesPage() {
 
                   {/* Action */}
                   <div className="flex items-center justify-between">
-                    <span className={`font-bold text-sm uppercase tracking-wider ${
-                      caseItem.available 
-                        ? 'text-cyan-400 group-hover:text-cyan-300' 
-                        : 'text-orange-400'
-                    } transition-colors duration-300`}>
-                      {caseItem.available ? 'Ver no Behance' : 'Em Breve'}
+                    <span className="font-bold text-sm uppercase tracking-wider text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300">
+                      Ver no Behance
                     </span>
 
-                    {caseItem.available && (
-                      <div className="text-cyan-400 transform group-hover:translate-x-2 transition-transform duration-300">
-                        →
-                      </div>
-                    )}
+                    <div className="text-cyan-400 transform group-hover:translate-x-2 transition-transform duration-300">
+                      →
+                    </div>
                   </div>
                 </div>
 
