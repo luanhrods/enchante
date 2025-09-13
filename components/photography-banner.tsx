@@ -1354,7 +1354,7 @@ const PhotographyBanner: React.FC = () => {
                   <div className="feature-text">
                     <h3>Grandes Marcas Confiam</h3>
                     <p className="tracking-wider">
-                      BIC, YLE, Ipê das Letras e outras grandes marcas e agências entre Brasil, Inglaterra, Portugal, Canadá e Estados Unidos já escolheram nossos serviços
+                      TubeLab e seus associados, YLE US e YLE Canada, Ipê das Letras e outras grandes marcas e agências entre Brasil, Inglaterra, Portugal, Canadá e Estados Unidos já escolheram nossos serviços
                     </p>
                   </div>
                 </li>
