@@ -1523,8 +1523,8 @@ const PhotographyBanner: React.FC = () => {
                   <img src="/images/brand-bic.png" alt="BIC" className="brand-logo" />
                   <img src="/images/brand-contentia.png" alt="Contentia" className="brand-logo" />
                   <img src="/images/brand-historiasreais.png" alt="Contentia" className="brand-logo" />
-                  <img src="/images/brand-tubelab.png" alt="Contentia" className="brand-logo" />
-                  <img src="/images/brand-mente.jpeg" alt="Contentia" className="brand-logo" />
+                  <img src="/images/brand-tubelab.jpg" alt="Contentia" className="brand-logo" />
+                  <img src="/images/brand-mente.jpg" alt="Contentia" className="brand-logo" />
                   <img src="/images/brand-geometric.png" alt="Cliente" className="brand-logo" />
                   <img src="/images/brand-institution.png" alt="Cliente" className="brand-logo" />
                   <img
