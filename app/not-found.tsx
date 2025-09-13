@@ -74,7 +74,7 @@ export default function NotFound() {
           temos muitas outras estratégias digitais para te encantar!
         </p>
 
-        {/* Abstract Blob */}
+        {/* Abstract Blob with Logo */}
         <div className="relative mb-8">
           <div className="w-64 h-64 mx-auto relative">
             <div 
@@ -90,6 +90,19 @@ export default function NotFound() {
                 animationDelay: '0.5s'
               }}
             />
+            {/* Logo Container */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-32 h-32 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20">
+                <img 
+                  src="/enchante.png" 
+                  alt="Enchantè Logo" 
+                  className="w-20 h-20 object-contain filter drop-shadow-lg"
+                  style={{
+                    filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))'
+                  }}
+                />
+              </div>
+            </div>
           </div>
         </div>
 
