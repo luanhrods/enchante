@@ -1522,6 +1522,7 @@ const PhotographyBanner: React.FC = () => {
                 <div className="brands-track">
                   <img src="/images/brand-bic.png" alt="BIC" className="brand-logo" />
                   <img src="/images/brand-contentia.png" alt="Contentia" className="brand-logo" />
+                  <img src="/images/brand-historiasreais.png" alt="Contentia" className="brand-logo" />
                   <img src="/images/brand-geometric.png" alt="Cliente" className="brand-logo" />
                   <img src="/images/brand-institution.png" alt="Cliente" className="brand-logo" />
                   <img
