@@ -1279,7 +1279,7 @@ const PhotographyBanner: React.FC = () => {
                 <span className="text tracking-tighter">{currentText}</span>
               </h1>
               <p className="lexend tracking-widest">
-                IDEIAS EM ESTRATÉGIAS DIGITAIS QUE GERAM RESULTADOS REAIS PARA SUA MARCA
+                PORQUE SUA IDEIA MERECE VISIBILIDADE
               </p>
               <a href="https://wa.me/5511988913315" className="book-link">
                 <span className="linktext tracking-tighter text-3xl">FALE CONOSCO</span>
