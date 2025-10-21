@@ -767,9 +767,7 @@ export default function BrittoPage() {
                 </ul>
 
                 <a
-                  href={`https://wa.me/5511988913315?text=${encodeURIComponent(
-                    "Olá! Gostaria de contratar o serviço Britto Premium da Enchantè"
-                  )}`}
+                  href={https://pay.kirvano.com/453dc10b-44a8-4a46-a897-1a7cf6cf4f3c}`}
                   className="cta-button"
                 >
                   Contratar Agora
