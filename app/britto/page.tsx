@@ -1,9 +1,8 @@
 "use client"
 
-import type React from "react"
 import { useState, useEffect } from "react"
 
-const BrittoServicePage: React.FC = () => {
+export default function BrittoPage() {
   const [currentText, setCurrentText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
@@ -767,7 +766,7 @@ const BrittoServicePage: React.FC = () => {
                   <li className="feature-item">SSL premium com renovação automática</li>
                 </ul>
 
-                
+                <a
                   href={`https://wa.me/5511988913315?text=${encodeURIComponent(
                     "Olá! Gostaria de contratar o serviço Britto Premium da Enchantè"
                   )}`}
@@ -805,7 +804,7 @@ const BrittoServicePage: React.FC = () => {
 
                 <div className="custom-price">💼 Preço Customizado por Projeto</div>
 
-                
+                <a
                   href={`https://wa.me/5511988913315?text=${encodeURIComponent(
                     "Olá! Gostaria de saber mais sobre os serviços de Marketing Digital da Enchantè"
                   )}`}
@@ -821,5 +820,3 @@ const BrittoServicePage: React.FC = () => {
     </>
   )
 }
-
-export default BrittoServicePage
