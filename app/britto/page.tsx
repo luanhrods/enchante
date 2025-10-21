@@ -767,7 +767,7 @@ export default function BrittoPage() {
                 </ul>
 
                 <a
-                  href={https://pay.kirvano.com/453dc10b-44a8-4a46-a897-1a7cf6cf4f3c}`}
+                  href="https://pay.kirvano.com/453dc10b-44a8-4a46-a897-1a7cf6cf4f3c"
                   className="cta-button"
                 >
                   Contratar Agora
